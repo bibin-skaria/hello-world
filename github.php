@@ -1,5 +1,5 @@
-<?php
-$repo_dir = '/var/www/html/.git';
+<?php var_dump(shell_exec("git pull -f"));
+/*$repo_dir = '/var/www/html/.git';
 $web_root_dir = '/var/www/html';
 
 // Full path to git binary is required if git is not in your PHP user's path. Otherwise just use 'git'.
@@ -33,4 +33,4 @@ if ($update) {
   $commit_hash = shell_exec('cd ' . $repo_dir . ' && ' . $git_bin_path  . ' rev-parse --short HEAD');
   file_put_contents('deploy.log', date('m/d/Y h:i:s a') . " Deployed branch: " .  $branch . " Commit: " . $commit_hash . "\n", FILE_APPEND);
 }
-?>
+?>*/
