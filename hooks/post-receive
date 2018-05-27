@@ -1,0 +1,1 @@
+git --work-tree=/var/www/html --git-dir=/var/www/html checkout -f
